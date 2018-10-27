@@ -1,0 +1,11 @@
+{% include 'search.html' %}
+{% block body %}
+		<h1>Properties</h1>
+		<ul>
+			{% for prop in Property %}
+				<li>
+					<a href='{{prop.id}}'>{{ prop.Name }}</a>
+				</li>
+			{% endfor %}
+		</ul>
+{% endblock %}
